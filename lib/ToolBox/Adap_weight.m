@@ -1,0 +1,9 @@
+function weight_alpha = Adap_weight(Y,ratio,eta)
+Nway=size(Y);
+rank = Adap_fibered_Rank(Y,ratio);
+temp = zeros(3,1);
+temp(1)=rank(1)/min(Nway(2),Nway(3));
+temp(2)=rank(2)/min(Nway(1),Nway(3));
+temp(3)=rank(3)/min(Nway(2),Nway(1));
+summ = [exp(1)^(eta*temp(1)/sum(temp)),exp(1)^(eta*temp(2)/sum(temp)),exp(1)^(eta*temp(3)/sum(temp))];
+weight_alpha = summ/sum(summ);
