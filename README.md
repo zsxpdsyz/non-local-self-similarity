@@ -1,4 +1,5 @@
 %% =================================================================
+
 % This script compares low-rank tensor completion methods
 % listed as follows:
 %     1. TMac       
@@ -17,7 +18,7 @@
 %
 % Please make sure Your data is in range [0, 1].
 %
-% Created by Xiao-Tong Li £¨lixiaotong0283@163.com£©
+% Created by Xiao-Tong Li  lixiaotong0283@163.com
 % 1/3/2019
 
 %% =================================================================
